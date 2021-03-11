@@ -1,0 +1,28 @@
+{
+  "name": "zip2geo",
+  "version": "1.0.5",
+  "description": "A zipcode geoloc lookup for NodeJS.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx babel src --out-dir dist",
+    "start": "npx babel src --watch --out-dir dist",
+    "reindex": "babel-node --preset=@babel/preset-env ./tools/reindex.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjkahrs/zip2geo.git"
+  },
+  "author": "JJ Kahrs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jjkahrs/zip2geo/issues"
+  },
+  "homepage": "https://github.com/jjkahrs/zip2geo#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/preset-env": "^7.13.10"
+  }
+}
